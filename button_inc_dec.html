@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <link rel="stylesheet" href="btn.css">
+    
+</head>
+<body>
+<div id="main">
+<script>
+var val =0;
+function buttonIncrement(){
+    ++val;
+    console.log(val);
+    document.getElementById('disp').innerHTML= val;
+}
+function buttonDecrement(){
+    --val;
+    console.log(val);
+    document.getElementById('disp').innerHTML= val;
+}
+</script>
+    <h3 id="disp"></h3>
+    <button class="btn" onclick="buttonIncrement()">+</button>
+    <button class="btn" onclick="buttonDecrement()">-</button>
+</div>
+</body>
+</html>
